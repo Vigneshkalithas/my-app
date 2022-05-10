@@ -1,5 +1,6 @@
 import "./App.css";
-import { useState } from "react";
+import { Counter } from "./Counter";
+import { AddColor } from "./AddColor";
 
 export default function App() {
 
@@ -18,8 +19,7 @@ export default function App() {
 
 // },
 // ];
-
-  return (
+return (
     <div className="App">
       {/* <Msg
         name="Vignesh kalithas"
@@ -35,45 +35,18 @@ export default function App() {
       /> */}
       {/* {users.map( user => <Msg name={user.name} pic={user.pic} />)} */}
       {/* <Counter /> */}
-      <AddColor/>
-      
+      <AddColor/>      
     </div>
   );
 }
-// hook is function - stars with 'use'
-// useState 
-// const [state,setState] = useState(InitialValue);
-// setState - Informs React  State is changed - re-render (updating)
-// function Counter(){
-//   // let like = 10;
-//   const [like,setLike] = useState(0);
-//   const[dislike,setdisLike] =useState(0);
-//   return (
-//     <div>
-//       <button className="btn-like" onClick={()=> {setLike(like+1)}}>👍{like}</button>
-//       <button className="btn-dislike" onClick={()=> {setdisLike(dislike+1)}}>👎{dislike}</button>
-//     </div>
-//   )
-// }
-// function Msg({name, pic}){
-//   return (
-//     <div className="user-container">
-//       <img className="profile-pic" src={pic} alt={name} />
-//       <h1>Hi,{name}😎😊🤞</h1>
-//       <Counter />
-//     </div>
-//   );
-// }
-
-function AddColor(){
-  const color="skyblue";
-  const styles={
-   fontSize:"24px",
-   backgroundColor:color,
-  };
-  return(
-  <div>
-    <input style={styles}></input>
-  </div>
-  )
+function Msg({name, pic}){
+  return (
+    <div className="user-container">
+      <img className="profile-pic" src={pic} alt={name} />
+      <h1>Hi,{name}😎😊🤞</h1>
+      <Counter />
+    </div>
+  );
 }
+
+
