@@ -35,6 +35,7 @@ export default function App() {
       /> */}
       {/* {users.map( user => <Msg name={user.name} pic={user.pic} />)} */}
       {/* <Counter /> */}
+      <AddColor/>
       
     </div>
   );
