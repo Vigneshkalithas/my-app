@@ -63,3 +63,16 @@ export default function App() {
 //     </div>
 //   );
 // }
+
+function AddColor(){
+  const color="skyblue";
+  const styles={
+   fontSize:"24px",
+   backgroundColor:color,
+  };
+  return(
+  <div>
+    <input style={styles}></input>
+  </div>
+  )
+}
